@@ -150,7 +150,7 @@ const VideoPreview: FC<{ file: OdFileObject }> = ({ file }) => {
           />
 
           <DownloadButton
-            onClickCallback={() => window.open(`intent:${getBaseUrl()}/api/name${asPath}${hashedToken ? `&odpt=${hashedToken}` : ''}#Intent;package=com.mxtech.videoplayer.ad;S.title=${asPath};end`)}
+            onClickCallback={() => window.open(`intent:${getBaseUrl()}/api/name${asPath}${hashedToken ? `&odpt=${hashedToken}` : ''}#Intent;package=com.mxtech.videoplayer.ad;S.title=/api/name${asPath};end`)}
             btnText="MX"
             btnImage="/players/iina.png"
            
