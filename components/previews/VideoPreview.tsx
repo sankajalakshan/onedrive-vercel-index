@@ -149,9 +149,12 @@ const VideoPreview: FC<{ file: OdFileObject }> = ({ file }) => {
           />
 
           <DownloadButton
-            onClickCallback={() => window.open(`iina://weblink?url=${getBaseUrl()}${videoUrl}`)}
-            btnText="IINA"
+            onClickCallback={() => window.open(`intent:${getBaseUrl()}${videoUrl}#Intent;package=com.mxtech.videoplayer.ad;S.title=${asPath};end`)}
+            btnText="MX"
             btnImage="/players/iina.png"
+            
+            //text: "MXPlayer(Free)",
+            //href: `intent:${getBaseUrl()}${videoUrl}#Intent;package=com.mxtech.videoplayer.ad;S.title=${videoUrl};end`,
           />
           <DownloadButton
             onClickCallback={() => window.open(`vlc://${getBaseUrl()}${videoUrl}`)}
