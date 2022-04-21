@@ -150,7 +150,7 @@ const VideoPreview: FC<{ file: OdFileObject }> = ({ file }) => {
           />
 
           <DownloadButton
-            onClickCallback={() => window.open(`intent:https://onedrive-vercel-index-ten-chi.vercel.app/api/name/All.The.Old.Knives.2022.720p.WEBRip.x264.AAC-%5BFilmsZilla.com%5D.mp4#Intent;package=com.mxtech.videoplayer.ad;end`)}
+            onClickCallback={() => window.open(`intent:${getBaseUrl()}/api/name/${asPath}${hashedToken ? `&odpt=${hashedToken}` : ''}#Intent;package=com.mxtech.videoplayer.ad;S.title=${videoUrl};end`)}
             btnText="MX"
             btnImage="/players/iina.png"
            
