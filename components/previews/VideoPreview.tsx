@@ -149,12 +149,10 @@ const VideoPreview: FC<{ file: OdFileObject }> = ({ file }) => {
           />
 
           <DownloadButton
-            onClickCallback={() => window.open(`intent:https://onedrive-vercel-index-ten-chi.vercel.app/All.The.Old.Knives.2022.720p.WEBRip.x264.AAC-%5BFilmsZilla.com%5D.mp4:#Intent;package=com.mxtech.videoplayer.ad;S.title=/All.The.Old.Knives.2022.720p.WEBRip.x264.AAC-%5BFilmsZilla.com%5D.mp4;end`)}
+            onClickCallback={() => window.open(`intent:https://onedrive-vercel-index-ten-chi.vercel.app/All.The.Old.Knives.2022.720p.WEBRip.x264.AAC-%5BFilmsZilla.com%5D.mp4:#Intent;package=com.mxtech.videoplayer.ad;S.title=https://onedrive-vercel-index-ten-chi.vercel.app/All.The.Old.Knives.2022.720p.WEBRip.x264.AAC-%5BFilmsZilla.com%5D.mp4;end`)}
             btnText="MX"
             btnImage="/players/iina.png"
-            
-            //text: "MXPlayer(Free)",
-            //href: `intent:${getBaseUrl()}${videoUrl}#Intent;package=com.mxtech.videoplayer.ad;S.title=${videoUrl};end`,
+           
           />
           <DownloadButton
             onClickCallback={() => window.open(`vlc://${getBaseUrl()}${videoUrl}`)}
