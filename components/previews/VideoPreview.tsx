@@ -134,7 +134,8 @@ const VideoPreview: FC<{ file: OdFileObject }> = ({ file }) => {
           />
           <DownloadButton
             onClickCallback={() => {
-              clipboard.copy(`${getBaseUrl()}/api/raw/?path=${asPath}${hashedToken ? `&odpt=${hashedToken}` : ''}`)
+              //clipboard.copy(`${getBaseUrl()}/api/raw/?path=${asPath}${hashedToken ? `&odpt=${hashedToken}` : ''}`)
+              clipboard.copy(`${getBaseUrl()}/api/name/${asPath}${hashedToken ? `&odpt=${hashedToken}` : ''}`)
               toast.success(t('Copied direct link to clipboard.'))
             }}
             btnColor="pink"
