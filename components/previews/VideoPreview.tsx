@@ -149,7 +149,7 @@ const VideoPreview: FC<{ file: OdFileObject }> = ({ file }) => {
           />
 
           <DownloadButton
-            onClickCallback={() => window.open(`intent:${videoUrl}#Intent;package=com.mxtech.videoplayer.ad;S.title=${asPath};end`)}
+            onClickCallback={() => window.open(`intent:https://exbook.exbookdemo.workers.dev/0:/u/Copy%20of%20www.1TamilMV.ink%20-%20Rocky%20%282021%29%20Tamil%20HQ%20HDRip%20-%20720p%20-%20x264%20-%20%28DD5.1%20-%20192Kbps%20%20AAC%29%20-%201.4GB%20-%20ESub.mkv#Intent;package=com.mxtech.videoplayer.ad;S.title=/0:/u/Copy%20of%20www.1TamilMV.ink%20-%20Rocky%20%282021%29%20Tamil%20HQ%20HDRip%20-%20720p%20-%20x264%20-%20%28DD5.1%20-%20192Kbps%20%20AAC%29%20-%201.4GB%20-%20ESub.mkv;end`)}
             btnText="MX"
             btnImage="/players/iina.png"
             
